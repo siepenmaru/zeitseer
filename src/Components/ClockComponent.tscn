@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://ceftknkeecx6y"]
+
+[ext_resource type="Script" path="res://src/Components/ClockComponent.gd" id="1_ey83e"]
+[ext_resource type="Texture2D" uid="uid://ljhdfpftcknw" path="res://assets/placeholder.png" id="2_xqijb"]
+[ext_resource type="Texture2D" uid="uid://c3sujj6fkt6mr" path="res://assets/icon.svg" id="3_hqthc"]
+[ext_resource type="Texture2D" uid="uid://ck11mfq4ntxky" path="res://assets/Circle.svg" id="4_a10l6"]
+
+[node name="ClockComponent" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ey83e")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_xqijb")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 438.0
+offset_bottom = 438.0
+texture = ExtResource("3_hqthc")
+expand_mode = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 506.0
+offset_top = 103.0
+offset_right = 947.0
+offset_bottom = 180.0
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 821.0
+offset_top = 347.0
+offset_right = 1721.0
+offset_bottom = 1247.0
+value = 27.0
+fill_mode = 4
+texture_under = ExtResource("4_a10l6")
+texture_progress = ExtResource("4_a10l6")
+tint_under = Color(0.145098, 0.145098, 0.145098, 1)
+tint_progress = Color(0.333333, 0.752941, 0.352941, 1)
